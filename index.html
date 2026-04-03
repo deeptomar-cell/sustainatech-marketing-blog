@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sustainable Tech 2026 - The latest news and trends in climate tech, renewable energy, and sustainable infrastructure.">
+    <title>SustainaTech 2026 | Future of Green Innovation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#10b981', // emerald-500
+                        secondary: '#047857', // emerald-700
+                        dark: '#0f172a',    // slate-900
+                        darker: '#020617',  // slate-950
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #34d399, #10b981, #059669);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.1), 0 8px 10px -6px rgba(16, 185, 129, 0.1);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTQS8KQ0NP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MTQS8KQ0NP');
+    </script>
+</head>
+<body class="bg-darker text-slate-300 font-sans antialiased overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-display font-bold text-2xl tracking-tight text-white flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </span>
+                        SustainaTech<span class="text-primary">.</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-slate-300 hover:text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+                        <a href="contact.html" class="bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] opacity-20 pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary to-transparent rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700 text-sm text-slate-300 mb-8">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                Tracking 2026 Climate Innovations
+            </div>
+            <h1 class="text-5xl sm:text-7xl font-display font-extrabold text-white tracking-tight mb-8 leading-tight">
+                The Future is <span class="text-gradient">Sustainable.</span>
+            </h1>
+            <p class="mt-4 text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
+                Explore the technological breakthroughs defining the next decade, from solid-state batteries to AI-driven grid optimization.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+            
+            <!-- Posts Layout -->
+            <div class="lg:col-span-3 space-y-12">
+                <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                    <h2 class="text-3xl font-display font-bold text-white">Featured Stories</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-container">
+                    <!-- Javascript will populate this with 15 posts -->
+                    <script>
+                        const topics = [
+                            "Green AI & Energy-Efficient Computing",
+                            "AI-Driven Grid Optimization",
+                            "Green Data Centers & Liquid Cooling",
+                            "Solid-State Batteries Revolution",
+                            "Long-Duration Energy Storage (LDES)",
+                            "Green Hydrogen Production Scaling",
+                            "Circular IT Hardware & Device Lifecycles",
+                            "Closed-Loop Battery Recycling",
+                            "Precision Agriculture & Soil Health Sensors",
+                            "Vertical Farming & Urban Agtech",
+                            "Digital Traceability for Decarbonization",
+                            "Nature-Positive Infrastructure Design",
+                            "Direct Air Capture (DAC) Facilities",
+                            "Sustainable Transition Finance Tools",
+                            "Bio-based Materials & Biodegradable Packaging"
+                        ];
+
+                        const container = document.getElementById('posts-container');
+                        
+                        topics.forEach((topic, index) => {
+                            const postNumber = index + 1;
+                            const imagePlaceholderUrl = `https://placehold.co/600x400/1e293b/10b981?text=Tech+Innovation+${postNumber}`;
+                            
+                            const cardHTML = `
+                                <a href="posts/post-${postNumber}.html" class="flex flex-col group card-hover glass rounded-2xl overflow-hidden border border-slate-800">
+                                    <div class="relative w-full h-48 overflow-hidden bg-slate-800">
+                                        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay group-hover:opacity-0 transition-opacity z-10"></div>
+                                        <img src="${imagePlaceholderUrl}" alt="${topic} Header Image" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <span class="text-xs font-semibold text-primary uppercase tracking-wider">Innovation</span>
+                                            <span class="text-slate-500 text-xs text-bold">|</span>
+                                            <span class="text-slate-500 text-xs">Oct 2026</span>
+                                        </div>
+                                        <h3 class="text-xl font-display font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-2">${topic}</h3>
+                                        <p class="text-slate-400 text-sm line-clamp-3 mb-4">Discover how 2026 is revolutionizing this sector, moving from hype to scalable execution with profound environmental impacts...</p>
+                                        <div class="mt-auto flex items-center text-primary text-sm font-medium group-hover:translate-x-1 transition-transform">
+                                            Read Article
+                                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            `;
+                            container.insertAdjacentHTML('beforeend', cardHTML);
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1 space-y-8">
+                <!-- Social Media Links -->
+                <div class="glass p-6 rounded-2xl border border-slate-800 card-hover">
+                    <h3 class="font-display font-bold text-xl text-white mb-6">Connect With Us</h3>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center gap-4 text-slate-400 hover:text-white transition-colors p-3 rounded-xl hover:bg-slate-800/50">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-[#1DA1F2]">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                            </div>
+                            <span class="font-medium">Twitter / X</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 text-slate-400 hover:text-white transition-colors p-3 rounded-xl hover:bg-slate-800/50">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-[#0A66C2]">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </div>
+                            <span class="font-medium">LinkedIn</span>
+                        </a>
+                        <!-- Add TikTok as requested in Unique Promotion -->
+                        <a href="#" class="flex items-center gap-4 text-slate-400 hover:text-white transition-colors p-3 rounded-xl hover:bg-slate-800/50">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                            </div>
+                            <span class="font-medium">TikTok</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="glass p-6 rounded-2xl border border-slate-800 relative overflow-hidden card-hover">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+                    <h3 class="font-display font-bold text-xl text-white mb-3 relative z-10">Subscribe</h3>
+                    <p class="text-sm text-slate-400 mb-6 relative z-10">Get the latest 2026 climate tech trends in your inbox.</p>
+                    <form class="relative z-10" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="Email address" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary mb-3">
+                        <button class="w-full bg-primary text-darker font-medium rounded-lg px-4 py-3 hover:bg-emerald-400 transition-colors">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-dark mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="font-display font-bold text-xl text-white">SustainaTech<span class="text-primary">.</span></span>
+                    <p class="text-slate-400 text-sm mt-2">Pioneering the climate tech conversation of 2026.</p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="index.html" class="text-slate-400 hover:text-white text-sm">Home</a>
+                    <a href="about.html" class="text-slate-400 hover:text-white text-sm">About Us</a>
+                    <a href="contact.html" class="text-slate-400 hover:text-white text-sm">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm flex flex-col items-center">
+                <p>&copy; 2026 SustainaTech. A College Digital Marketing Project.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
