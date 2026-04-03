@@ -116,10 +116,12 @@ const template = `<!DOCTYPE html>
 </body>
 </html>`;
 
-topics.forEach(topic => {
+const bgImages = ['green_ai.png', 'smart_grid.png', 'vertical_farm.png'];
+topics.forEach((topic, index) => {
+    let realImg = '../assets/' + bgImages[index % bgImages.length];
     let output = template
         .replace(/{{TITLE}}/g, topic.title)
-        .replace(/{{IMAGE_TEXT}}/g, encodeURIComponent(topic.title).replace(/%20/g, '+'))
+        .replace(/https:\/\/placehold.co\/1200x675\/1e293b\/10b981\?text={{IMAGE_TEXT}}/g, realImg)
         .replace(/{{KEYWORD}}/g, topic.keyword);
     fs.writeFileSync(path.join(__dirname, 'posts', 'post-' + topic.id + '.html'), output);
     console.log('Generated post-' + topic.id + '.html');
