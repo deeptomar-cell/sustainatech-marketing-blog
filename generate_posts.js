@@ -72,7 +72,7 @@ const template = `<!DOCTYPE html>
                         <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-primary font-bold">ST</div>
                         <div>
                             <p class="text-white font-medium">SustainaTech Editorial Team</p>
-                            <p class="text-slate-500 text-sm">October 24, 2026</p>
+                            <p class="text-slate-500 text-sm">{{PUB_DATE}}</p>
                         </div>
                     </div>
                 </div>
@@ -117,11 +117,19 @@ const template = `<!DOCTYPE html>
 </html>`;
 
 const bgImages = ['green_ai.png', 'smart_grid.png', 'liquid_cooling.png', 'solid_state.png', 'thermal_storage.png', 'hydrogen_plant.png', 'circular_it.png', 'battery_recycle.png', 'precision_ag.png', 'vertical_farm.png', 'blockchain_carbon.png', 'eco_bridge.png', 'air_capture.png', 'green_finance.png', 'bio_materials.png'];
+const pubDates = [
+    "May 12, 2025", "June 28, 2025", "August 14, 2025", "September 5, 2025",
+    "October 22, 2025", "November 11, 2025", "December 3, 2025", "January 14, 2026",
+    "January 28, 2026", "February 4, 2026", "February 19, 2026", "March 2, 2026",
+    "March 15, 2026", "March 21, 2026", "March 29, 2026"
+];
 topics.forEach((topic, index) => {
     let realImg = '../assets/' + bgImages[index];
+    let pubDate = pubDates[index];
     let output = template
         .replace(/{{TITLE}}/g, topic.title)
         .replace(/https:\/\/placehold.co\/1200x675\/1e293b\/10b981\?text={{IMAGE_TEXT}}/g, realImg)
+        .replace(/{{PUB_DATE}}/g, pubDate)
         .replace(/{{KEYWORD}}/g, topic.keyword);
     fs.writeFileSync(path.join(__dirname, 'posts', 'post-' + topic.id + '.html'), output);
     console.log('Generated post-' + topic.id + '.html');
