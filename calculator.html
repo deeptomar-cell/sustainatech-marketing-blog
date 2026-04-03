@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact the SustainaTech 2026 team for inquiries and feedback.">
-    <title>Contact Us | SustainaTech 2026</title>
+    <meta name="description" content="About our Digital Marketing project team and promotional strategy for SustainaTech 2026.">
+    <title>Calculator | SustainaTech 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -20,12 +20,16 @@
     <style>
         .glass { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .text-gradient { background: linear-gradient(135deg, #34d399, #10b981, #059669); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .table-glass { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1rem; overflow: hidden; }
+        th { background: rgba(16, 185, 129, 0.1); border-bottom: 1px solid rgba(16, 185, 129, 0.2); }
+        td { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        tr:last-child td { border-bottom: none; }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTQS8KQ0NP"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MTQS8KQ0NP');</script>
 </head>
-<body class="bg-darker text-slate-300 font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-darker text-slate-300 font-sans antialiased">
     <!-- Navbar -->
     <!-- Navbar -->
     <nav class="fixed w-full z-50 glass border-b border-slate-800">
@@ -82,75 +86,71 @@
             }
         });
     </script>
-
-    <!-- Content -->
-    <div class="flex-grow pt-32 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div class="text-center mb-16">
-            <h1 class="text-4xl sm:text-6xl font-display font-extrabold text-white tracking-tight mb-4">
-                Get in <span class="text-gradient">Touch.</span>
+    <!-- Calculator Hero Section -->
+    <div class="relative pt-32 pb-20 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('assets/blockchain_carbon.png')] bg-cover bg-center opacity-30 mix-blend-luminosity"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-darker/60 via-darker/90 to-darker"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+            <h1 class="text-5xl sm:text-7xl font-display font-extrabold text-white tracking-tight leading-tight mb-6">
+                Carbon <span class="text-gradient">Calculator.</span>
             </h1>
-            <p class="text-xl text-slate-400 font-light">Reach out for collaborations, inquiries, or feedback.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            
-            <!-- Contact Form -->
-            <div class="glass p-8 rounded-2xl border border-slate-800 relative shadow-2xl">
-                <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
-                <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="relative z-10 space-y-6">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-400 mb-2">Name</label>
-                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-400 mb-2">Email</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-400 mb-2">Message</label>
-                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-primary text-darker font-bold rounded-lg px-4 py-3 hover:bg-emerald-400 transition-colors shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="space-y-8">
-                <div class="glass p-8 rounded-2xl border border-slate-800">
-                    <h3 class="font-display text-2xl font-bold text-white mb-6">Direct Contact</h3>
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        For specific inquiries regarding this Bennett University digital marketing project, please contact our team representative directly via the emails provided below.
-                    </p>
-                    
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-800 text-primary flex items-center justify-center shrink-0 border border-slate-700">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-medium mb-1">Primary Email</h4>
-                                <a href="mailto:deepanshutomar9090@gmail.com" class="text-emerald-400 hover:text-emerald-300 transition-colors text-sm break-all">deepanshutomar9090@gmail.com</a>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-800 text-primary flex items-center justify-center shrink-0 border border-slate-700">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-medium mb-1">University Email</h4>
-                                <a href="mailto:M25MBAG0220@bennett.edu.in" class="text-emerald-400 hover:text-emerald-300 transition-colors text-sm break-all">M25MBAG0220@bennett.edu.in</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
+                Estimate your corporate carbon footprint using our advanced proprietary web app.
+            </p>
         </div>
     </div>
 
-    <footer class="border-t border-slate-800 bg-dark py-8">
+    <!-- Calculator App -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="glass p-8 md:p-12 rounded-3xl border border-slate-800 relative shadow-2xl overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <form id="calc-form" class="space-y-8 relative z-10" oninput="calculateFootprint()">
+                <div>
+                    <label class="block text-white font-medium mb-3">Number of Employees (Office)</label>
+                    <input type="range" id="employees" min="1" max="1000" value="50" class="w-full accent-primary h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                    <div class="text-primary font-display font-bold mt-2" id="employees-val">50 Employees</div>
+                </div>
+                <div>
+                    <label class="block text-white font-medium mb-3">Enterprise Servers Active</label>
+                    <input type="range" id="servers" min="0" max="500" value="10" class="w-full accent-primary h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                    <div class="text-primary font-display font-bold mt-2" id="servers-val">10 Servers</div>
+                </div>
+                <div>
+                    <label class="block text-white font-medium mb-3">Renewable Energy Integration (%)</label>
+                    <input type="range" id="renewable" min="0" max="100" value="20" class="w-full accent-primary h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                    <div class="text-primary font-display font-bold mt-2" id="renewable-val">20%</div>
+                </div>
+            </form>
+
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center relative z-10">
+                <p class="text-slate-400 uppercase tracking-widest text-sm font-semibold mb-2">Estimated Weekly Emissions</p>
+                <div class="text-6xl font-display font-bold text-white mb-2">
+                    <span id="result" class="text-gradient">4.2</span> <span class="text-3xl text-slate-500">tons CO₂e</span>
+                </div>
+                <p class="text-slate-500 text-sm drop-shadow-sm">Based on EPA commercial footprint averages for 2026.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calculateFootprint() {
+            const e = document.getElementById('employees');
+            const s = document.getElementById('servers');
+            const r = document.getElementById('renewable');
+            if(!e || !s || !r) return;
+            document.getElementById('employees-val').textContent = e.value + ' Employees';
+            document.getElementById('servers-val').textContent = s.value + ' Servers';
+            document.getElementById('renewable-val').textContent = r.value + '%';
+
+            let baseE = (e.value * 0.05) + (s.value * 0.2);
+            let deduction = baseE * (r.value / 100);
+            let total = baseE - deduction;
+            document.getElementById('result').textContent = total.toFixed(2);
+        }
+        setTimeout(calculateFootprint, 500);
+    </script>
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-dark mt-auto pb-12 pt-8">
         <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">
             <p>&copy; 2026 SustainaTech. Built for Bennett University Digital Marketing Project.</p>
         </div>

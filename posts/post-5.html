@@ -40,9 +40,12 @@
                     </button>
                 </div>
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex ml-10 space-x-8 items-center">
+                <div class="hidden md:flex ml-10 space-x-6 items-center">
                     <a href="../index.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                    <a href="../about.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+                    <a href="../about.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <a href="../events.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Events</a>
+                    <a href="../calculator.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Calculator</a>
+                    <a href="../resources.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Resources</a>
                     <a href="../contact.html" class="bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all">Contact</a>
                 </div>
             </div>
@@ -52,7 +55,10 @@
             <div class="px-4 pt-2 pb-4 space-y-1 flex flex-col">
                 <a href="../index.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
                 <a href="../about.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About Us</a>
-                <a href="../contact.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">Contact</a>
+                <a href="../events.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Events Hub</a>
+                <a href="../calculator.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Carbon Calculator</a>
+                <a href="../resources.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Tech Resources</a>
+                <a href="../contact.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -60,7 +66,8 @@
         document.addEventListener("DOMContentLoaded", () => {
             const btn = document.getElementById("mobile-btn");
             const menu = document.getElementById("mobile-menu");
-            if(btn && menu) {
+            if(btn && menu && !btn.hasAttribute('data-bound')) {
+                btn.setAttribute('data-bound', 'true');
                 btn.addEventListener("click", () => {
                     menu.classList.toggle("hidden");
                 });
