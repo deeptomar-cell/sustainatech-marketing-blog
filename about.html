@@ -31,23 +31,54 @@
 </head>
 <body class="bg-darker text-slate-300 font-sans antialiased">
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="fixed w-full z-50 glass border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <a href="index.html" class="font-display font-bold text-2xl text-white flex items-center gap-2">
-                    <span class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </span>
-                    SustainaTech<span class="text-primary">.</span>
-                </a>
-                <div class="hidden md:flex ml-10 space-x-8">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-display font-bold text-2xl tracking-tight text-white flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </span>
+                        SustainaTech<span class="text-primary">.</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-btn" class="text-slate-300 hover:text-white p-2 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex ml-10 space-x-8 items-center">
                     <a href="index.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                    <a href="about.html" class="text-white hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+                    <a href="about.html" class="text-slate-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
                     <a href="contact.html" class="bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all">Contact</a>
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+            <div class="px-4 pt-2 pb-4 space-y-1 flex flex-col">
+                <a href="index.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="contact.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">Contact</a>
+            </div>
+        </div>
     </nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btn = document.getElementById("mobile-btn");
+            const menu = document.getElementById("mobile-menu");
+            if(btn && menu) {
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            }
+        });
+    </script>
 
     <!-- Header Section -->
     <div class="relative pt-32 pb-16 overflow-hidden">
