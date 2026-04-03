@@ -116,9 +116,9 @@ const template = `<!DOCTYPE html>
 </body>
 </html>`;
 
-const bgImages = ['green_ai.png', 'smart_grid.png', 'vertical_farm.png'];
+const bgImages = ['green_ai.png', 'smart_grid.png', 'liquid_cooling.png', 'solid_state.png', 'thermal_storage.png', 'hydrogen_plant.png', 'circular_it.png', 'battery_recycle.png', 'precision_ag.png', 'vertical_farm.png', 'blockchain_carbon.png', 'eco_bridge.png', 'air_capture.png', 'green_finance.png', 'bio_materials.png'];
 topics.forEach((topic, index) => {
-    let realImg = '../assets/' + bgImages[index % bgImages.length];
+    let realImg = '../assets/' + bgImages[index];
     let output = template
         .replace(/{{TITLE}}/g, topic.title)
         .replace(/https:\/\/placehold.co\/1200x675\/1e293b\/10b981\?text={{IMAGE_TEXT}}/g, realImg)
